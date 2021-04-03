@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'UnidreamLED';
+    src: url("/fonts/unidreamled.ttf");
+    font-display: swap;
+  }
+#timerun {
+  text-align: center;
+  margin: 5px auto;
+  padding: 0 5px;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: 'UnidreamLED';
+  font-size: 14px;
+  color: white;
+  width: 8em;
+  font-weight: 600;
+  border-radius: 5px;
+  /*height:90px */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
