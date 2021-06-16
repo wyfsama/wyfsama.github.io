@@ -4,6 +4,48 @@
   
   
   <entry>
+    <title>you-get+ffmpeg提取视频BGM</title>
+    <link href="/2021/05/10/6.you-get+FFMpeg%E6%8F%90%E5%8F%96%E8%A7%86%E9%A2%91BGM/"/>
+    <url>/2021/05/10/6.you-get+FFMpeg%E6%8F%90%E5%8F%96%E8%A7%86%E9%A2%91BGM/</url>
+    
+    <content type="html"><![CDATA[<p><code>you-get [URL]</code></p><p><code>ffmpeg -i [input(video)] [ouput(music)]</code></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+      <tag>FFMpeg</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Chrome标签脚本</title>
+    <link href="/2021/05/09/5-chrome%E6%A0%87%E7%AD%BE%E8%84%9A%E6%9C%AC/"/>
+    <url>/2021/05/09/5-chrome%E6%A0%87%E7%AD%BE%E8%84%9A%E6%9C%AC/</url>
+    
+    <content type="html"><![CDATA[<style>.chromePlugins{    display:block;    position: relative;    margin：5px 0;    color: white !important;    width: 200px;    height: 50px;    border-radius: 50px;    text-align: center;    line-height: 50px;    text-decoration: none !important;    background: linear-gradient(to right,#3498db,#2ecc71,#e67e22,#3498db);    background-size:400%;}body{    background: black;}.chromePlugins:hover{    animation: flow 6s linear infinite;}.chromePlugins:hover::after{    animation: flow 6s linear infinite;    filter: blur(30px);}.chromePlugins::after{    content: "";    position: absolute;    left: -5px;    top: -5px;    right: -5px;    bottom: -5px;    border-radius: 60px;    background: white;    z-index: -1;    background: linear-gradient(to right,#3498db,#2ecc71,#e67e22,#3498db);    background-size:400%;}@keyframes flow{    100%{        background-position: -400%;    }}</style><h4 id="整活背景"><a href="#整活背景" class="headerlink" title="整活背景"></a>整活背景</h4><p>浏览B站或者看微信公众号文章的时候，发现很多好图的时候（尤其是一些纸片人老婆的图），很想将其下载下来。这时候就需要F12审查元素，找到图片链接，再另存到本地。苦于喜欢的纸片人老婆实在太多，这样的方法就会显得很笨了。这时候就需要好朋友JS来帮忙了！</p><h4 id="插件宗旨"><a href="#插件宗旨" class="headerlink" title="插件宗旨"></a>插件宗旨</h4><p>没必要的事就不做,必要的事就尽快做。–《冰菓》</p><h4 id="插件大全（持续更新中）"><a href="#插件大全（持续更新中）" class="headerlink" title="插件大全（持续更新中）"></a>插件大全（持续更新中）</h4><ul><li><p>获取B站视频封面</p><div style="margin:20px 0;">  <a class="chromePlugins" href="javascript:window.open(document.querySelector('[itemprop=\'image\']').content)">获取B站视频封面</a><div></li><li><p>获取微信文章封面</p><div style="margin:20px 0;">  <a class="chromePlugins" href="javascript:let imgUrl=document.querySelector('[property=\'twitter:image\']').content;window.open(imgUrl)">获取微信文章封面</a><div></li><li><p>网页双屏</p><div style="margin:20px 0;">  <a class="chromePlugins" href="javascript:document.write('<HTML><HEAD></HEAD><FRAMESET COLS=\'50%25,*\'><FRAME SRC=' + location.href + '><FRAME SRC=' + location.href + '></FRAMESET></HTML>')">网页双屏</a><div></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>DOM</tag>
+      
+      <tag>JavaScript</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>探究数组方法的使用技巧</title>
     <link href="/2021/04/14/3.%E6%8E%A2%E7%A9%B6%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     <url>/2021/04/14/3.%E6%8E%A2%E7%A9%B6%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
