@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+}
+
+.project-container {
+  display: flex;
+  width: 100%;
+}
+
+.project-container .project-item {
+  cursor: pointer;
+  width: 25%;
+  position: relative;
+}
+
+.project-container .project-item img {
+  width: 100%;
+}
+
+.project-container .project-item .item-desc {
+  width: 100%;
+  overflow: hidden;
+  color: #eee;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transition: top 0.1s ease-in;
+  -webkit-transition: top 0.1s ease-in;
+  -moz-transition: top 0.1s ease-in;
+  -ms-transition: top 0.1s ease-in;
+  -o-transition: top 0.1s ease-in;
+  left: 0;
+  top: 75%;
+  bottom: 0;
+}
+
+.project-container .project-item .item-desc:hover {
+  top: 0;
+  bottom: 0;
+}
+
+.project-container .project-item .item-desc .item-name {
+  text-align: center;
+  font: 300 1.2rem '';
+}
+
+.project-container .project-item .item-desc .technology-stack {
+  margin-top: 1.875rem;
+  font-size: 0.875rem;
+}
+
+.project-container .project-item .source-code {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

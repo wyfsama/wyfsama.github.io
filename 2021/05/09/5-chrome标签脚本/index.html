@@ -209,7 +209,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      284 字
+      353 字
     </span>
   
 
@@ -219,7 +219,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3
+      4
        分钟
     </span>
   
@@ -297,8 +297,10 @@ body{
 }
 </style>
 
-<h4 id="整活背景"><a href="#整活背景" class="headerlink" title="整活背景"></a>整活背景</h4><p>浏览B站或者看微信公众号文章的时候，发现很多好图的时候（尤其是一些纸片人老婆的图），很想将其下载下来。这时候就需要F12审查元素，找到图片链接，再另存到本地。苦于喜欢的纸片人老婆实在太多，这样的方法就会显得很笨了。这时候就需要好朋友JS来帮忙了！</p>
+<h4 id="整活背景"><a href="#整活背景" class="headerlink" title="整活背景"></a>整活背景</h4><p>浏览B站或者看微信公众号文章的时候，发现很多好图的时候（尤其是一些纸片人老婆的图），很想将其下载下来。这时候就需要F12审查元素，找到图片链接，再另存到本地。苦于想要的图片实在太多，这样的方法就会显得很笨了。这时候就需要好朋友JS来帮忙了！</p>
 <h4 id="插件宗旨"><a href="#插件宗旨" class="headerlink" title="插件宗旨"></a>插件宗旨</h4><p>没必要的事就不做,必要的事就尽快做。–《冰菓》</p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>书签可以在网址处插入一段 <code>javascript:</code> 开头的JS片段，来作为脚本使用</p>
+<h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4><p>如下书签直接拖动到浏览器书签栏中即可使用</p>
 <h4 id="插件大全（持续更新中）"><a href="#插件大全（持续更新中）" class="headerlink" title="插件大全（持续更新中）"></a>插件大全（持续更新中）</h4><ul>
 <li><p>获取B站视频封面</p>
 <div style="margin:20px 0;">
@@ -311,6 +313,14 @@ body{
 <li><p>网页双屏</p>
 <div style="margin:20px 0;">
   <a class="chromePlugins" href="javascript:document.write('<HTML><HEAD></HEAD><FRAMESET COLS=\'50%25,*\'><FRAME SRC=' + location.href + '><FRAME SRC=' + location.href + '></FRAMESET></HTML>')">网页双屏</a>
+<div></li>
+<li><p>加速播放</p>
+<div style="margin:20px 0;">
+  <a class="chromePlugins" href="javascript:document.querySelector('video').playbackRate=15">加速播放</a>
+<div></li>
+<li><p>微博全部取关</p>
+<div style="margin:20px 0;">
+  <a class="chromePlugins" href="javascript:$(\'.btn_link.S_txt1\').click();$$(\'.member_li\').forEach(l=>l.click());$(\'.W_btn_a[node-type=\'cancelFollowBtn\']\').click();$(\'[node-type=\'ok\']\').click();">微博全部取关</a>
 <div></li>
 </ul>
 
