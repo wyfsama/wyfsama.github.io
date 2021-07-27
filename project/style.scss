@@ -8,54 +8,57 @@ a {
 .project-container {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   .project-item {
     cursor: pointer;
-    width: 25%;
-    position: relative;
-    img {
-      width: 100%;
-    }
-    .item-desc {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100%;
+    width: 50%;
+    padding: 1.25rem;
+    .info-item {
+      position: relative;
       overflow: hidden;
-      color: #eee;
-      background: rgba(0, 0, 0, 0.5);
-      //background: rgba(0,0,0,.7);
-      position: absolute;
-      transition: top 0.1s ease-in;
-      -webkit-transition: top 0.1s ease-in;
-      -moz-transition: top 0.1s ease-in;
-      -ms-transition: top 0.1s ease-in;
-      -o-transition: top 0.1s ease-in;
-      left: 0;
-      top: 80%;
-      bottom: 0;
-      &:hover {
-        top: 0;
+      border-radius: 10px;
+      img {
+        width: 100%;
+      }
+      .item-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+        color: #eee;
+        background: rgba(0, 0, 0, 0.5);
+        //background: rgba(0,0,0,.7);
+        position: absolute;
+        left: 0;
+        top: 90%;
         bottom: 0;
-      }
-      .item-name {
-        text-align: center;
-        font: 300 1rem "";
-      }
-      .technology-stack {
-        font-size: 0.875rem;
+        .item-name {
+          text-align: center;
+          font: 300 1rem "";
+        }
+        .technology-stack {
+          font-size: 0.875rem;
+        }
       }
     }
     .source-code {
-      position: absolute;
-      left: 0;
-      bottom: -25%;
-      width: 100%;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      .icon-wrap {
-        display: inline;
+      .link {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
+    }
+  }
+}
+
+// 不生效 需要检查
+@media (min-width: 1000px) {
+  .info-item {
+    transition: all 2s ease-in;
+    &:hover .item-desc {
+      top: 0;
     }
   }
 }
@@ -65,33 +68,29 @@ a {
     display: block;
     .project-item {
       width: 100%;
-      display: flex;
       padding: 0.625rem 0;
       border-bottom: 1px dotted #aaa;
-      a {
-        width: 30%;
+      .info-item {
         .item-desc {
           text-align: center;
-          width: inherit;
-          top: 0.625rem;
+          top: 0;
           left: 0;
           right: 0;
-          bottom: 0.625rem;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
           .item-name {
-            font-size: 0.75rem;
+            font-size: 1.8rem;
+            font-weight: 700;
           }
           .technology-stack {
-            font-size: 0.75rem;
+            font-size: 1.2rem;
           }
         }
       }
       .source-code {
-        flex: 1;
-        position: relative;
-        margin-left: 0.625rem;
-        .icon-wrap {
-          display: block;
-        }
+        margin: 10px 0;
       }
     }
   }
