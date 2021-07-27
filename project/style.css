@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -71,6 +75,8 @@ a {
   .project-container .project-item {
     width: 100%;
     display: flex;
+    padding: 0.625rem 0;
+    border-bottom: 1px dotted #aaa;
   }
   .project-container .project-item a {
     width: 30%;
@@ -78,15 +84,16 @@ a {
   .project-container .project-item a .item-desc {
     text-align: center;
     width: inherit;
-    top: 0;
+    top: 0.625rem;
     left: 0;
     right: 0;
+    bottom: 0.625rem;
   }
   .project-container .project-item a .item-desc .item-name {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .project-container .project-item a .item-desc .technology-stack {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .project-container .project-item .source-code {
     flex: 1;
