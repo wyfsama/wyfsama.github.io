@@ -18,6 +18,9 @@ a {
 }
 
 .project-container .project-item .item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   overflow: hidden;
   color: #eee;
@@ -29,7 +32,7 @@ a {
   -ms-transition: top 0.1s ease-in;
   -o-transition: top 0.1s ease-in;
   left: 0;
-  top: 75%;
+  top: 80%;
   bottom: 0;
 }
 
@@ -40,11 +43,10 @@ a {
 
 .project-container .project-item .item-desc .item-name {
   text-align: center;
-  font: 300 1.2rem '';
+  font: 300 1rem "";
 }
 
 .project-container .project-item .item-desc .technology-stack {
-  margin-top: 1.875rem;
   font-size: 0.875rem;
 }
 
@@ -56,4 +58,42 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.project-container .project-item .source-code .icon-wrap {
+  display: inline;
+}
+
+@media (max-width: 991.98px) {
+  .project-container {
+    display: block;
+  }
+  .project-container .project-item {
+    width: 100%;
+    display: flex;
+  }
+  .project-container .project-item a {
+    width: 30%;
+  }
+  .project-container .project-item a .item-desc {
+    text-align: center;
+    width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .project-container .project-item a .item-desc .item-name {
+    font-size: 12px;
+  }
+  .project-container .project-item a .item-desc .technology-stack {
+    font-size: 12px;
+  }
+  .project-container .project-item .source-code {
+    flex: 1;
+    position: relative;
+    margin-left: 0.625rem;
+  }
+  .project-container .project-item .source-code .icon-wrap {
+    display: block;
+  }
 }
