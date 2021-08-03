@@ -51,6 +51,10 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2719371_qvrw6tib54.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -154,11 +158,30 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" href="/project/">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="iconfont icon-code"></i>
                 项目
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/project/pc">
+                    <i class="iconfont icon-diannao"></i>
+                    PC
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/project/mobile">
+                    <i class="iconfont icon-mobile"></i>
+                    MOBILE
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -234,18 +257,18 @@
         
         
         
-        <a target="_blank" rel="noopener" href="https://douban.com" class="
+        <a target="_blank" rel="noopener" href="https://stackoverflow.com/users/16583469/coding-man" class="
            hint--bottom hint--rounded"
-           aria-label=豆瓣
+           aria-label=stack overflow
         >
-          <i class="iconfont icon-douban-fill" aria-hidden="true"></i>
+          <i class="iconfont icon-stack-overflow-fill" aria-hidden="true"></i>
           
         </a>
       
         
         
         
-        <a target="_blank" rel="noopener" href="https://douban.com" class="
+        <a target="_blank" rel="noopener" href="https://www.v2ex.com/member/Akat3uki" class="
            hint--bottom hint--rounded"
            aria-label=v2ex
         >
@@ -256,13 +279,11 @@
         
         
         
-        <a href="javascript:;" class="qr-trigger
+        <a target="_blank" rel="noopener" href="https://t.me/Just_becau3e" class="
            "
            
         >
-          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
-          
-            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" lazyload alt="qrcode" />
+          <i class="iconfont icon-telegram-fill" aria-hidden="true"></i>
           
         </a>
       
@@ -287,17 +308,16 @@ code{
 <p class="note note-info"><strong>关于我</strong></p>
 
 <ul>
-<li><p><span class="label label-primary"><strong>Techno</strong></span>  爱好者</p>
+<li><p><span class="label label-primary"><strong>Techno</strong></span> 44 拍音乐爱好者</p>
 </li>
-<li><p><span class="label label-success"><strong>Dotaer</strong></span> 自学前端后已经AFK很久了</p>
+<li><p><span class="label label-success"><strong>Dotaer 2 号位</strong></span> 自学前端后已经 AFK 很久了</p>
 </li>
-<li><p>本名 <strong>高坂麗奈</strong></p>
+<li><p><span class="label label-info"><strong>永远喜欢京阿尼</strong></span>本名 <strong>高坂麗奈</strong></p>
 </li>
 <li><p>目标是成为前端六边形战士</p>
 </li>
 </ul>
 <p class="note note-success"><strong>学习方向</strong></p>
-
 
 <h4 id="Languages-and-Frameworks"><a href="#Languages-and-Frameworks" class="headerlink" title="Languages and Frameworks"></a>Languages and Frameworks</h4><div class='code'>
 <code><img height="20" src="../img/icon/javascript.png" srcset="/img/loading.gif" lazyload></code>
@@ -315,69 +335,67 @@ code{
 </div>
 
 <h4 id="Interested"><a href="#Interested" class="headerlink" title="Interested"></a>Interested</h4><p><code><img height="20" src="../img/icon/adobeaftereffects.svg" srcset="/img/loading.gif" lazyload></code></p>
-<div id="echarts1174" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<div id="echarts3500" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts1174'));
+        var myChart = echarts.init(document.getElementById('echarts3500'));
 
         // 指定图表的配置项和数据
-        var option =    {
-    tooltip: {},
-    legend: {
-        // data: ['技能']
-    },
-    radar: {
-        // shape: 'circle',
-        name: {
-            textStyle: {
-                color: '#fff',
-                backgroundColor: '#999',
-                borderRadius: 3,
-                padding: [3, 5]
-            }
-        },
-        indicator: [
-            { name: 'HTML', max: 100},
-            { name: 'CSS', max: 100},
-            { name: 'JavaScript', max: 100},
-            { name: 'Vue', max: 100},
-            { name: 'NodeJs', max: 100},
-            { name: 'Element UI', max: 100}
-        ]
-    },
-    legend:{
-        show:false
-    },
-    series: [{
-        type: 'radar',
-        areaStyle: {normal: {}},
-        data: [
-            {
-                value: [85, 70, 65, 75, 60, 65],
-                name: 'skills'
-            }
-        ]
-    }],
-    darkMode:true,
-    media:[
-        {
-         query:{
-            maxWidth: 1000               // 当容器宽度小于 1000 时。
-        },
-         option:{
-             radar:{
-                 radius:'50%'
-             }
-         }
-         }
-    ]   
+        var option = {
+tooltip: {},
+legend: {
+// data: ['技能']
+},
+radar: {
+// shape: 'circle',
+name: {
+textStyle: {
+color: '#fff',
+backgroundColor: '#999',
+borderRadius: 3,
+padding: [3, 5]
+}
+},
+indicator: [
+{ name: 'HTML', max: 100},
+{ name: 'CSS', max: 100},
+{ name: 'JavaScript', max: 100},
+{ name: 'Vue', max: 100},
+{ name: 'NodeJs', max: 100},
+{ name: 'Element UI', max: 100}
+]
+},
+legend:{
+show:false
+},
+series: [{
+type: 'radar',
+areaStyle: {normal: {}},
+data: [
+{
+value: [85, 70, 65, 75, 60, 65],
+name: 'skills'
+}
+]
+}],
+darkMode:true,
+media:[
+{
+query:{
+maxWidth: 1000 // 当容器宽度小于 1000 时。
+},
+option:{
+radar:{
+radius:'50%'
+}
+}
+}
+]  
 };
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 </script>
-
-
 
 <p class="note note-secondary"><strong>关于本博客</strong></p>
 
