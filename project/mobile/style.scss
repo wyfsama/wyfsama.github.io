@@ -25,6 +25,7 @@ a {
         object-fit: cover;
       }
       .item-desc {
+        user-select: none;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

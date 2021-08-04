@@ -14,6 +14,7 @@ a {
 }
 
 .project-container .project-item {
+  user-select: none;
   cursor: pointer;
   width: 50%;
   padding: 1.25rem;

@@ -33,6 +33,7 @@ a {
 }
 
 .project-container .project-item .info-item .item-desc {
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
