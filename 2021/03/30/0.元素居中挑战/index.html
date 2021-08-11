@@ -160,6 +160,18 @@
           
           
           
+            <li class="nav-item">
+              <a class="nav-link" href="/collections/">
+                <i class="iconfont icon-books"></i>
+                收藏
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="iconfont icon-code"></i>
@@ -232,7 +244,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      409 字
+      636 字
     </span>
   
 
@@ -242,7 +254,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      9
        分钟
     </span>
   
@@ -294,16 +306,35 @@
 <p>参考：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean">What does “top: 0; left: 0; bottom: 0; right: 0;” mean?</a></p>
 <figure class="highlight css"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-class">.parent</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">200px</span> auto;<br>  <span class="hljs-attribute">position</span>: relative;<br>&#125;<br><span class="hljs-selector-class">.son</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;<br>  <span class="hljs-attribute">position</span>: absolute;<br>  <span class="hljs-attribute">margin</span>: auto;<br>  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></div></td></tr></table></figure>
 
+<h3 id="calc-margin-或者-定位"><a href="#calc-margin-或者-定位" class="headerlink" title="calc() + margin 或者 定位"></a>calc() + margin 或者 定位</h3><p>calc(50% - 子元素一半宽度（高度)）可以的出居中所需宽高，其中calc中的百分数指的是相对于父元素的大小设定的比率</p>
+<figure class="highlight css"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-class">.parent</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">200px</span> auto;<br>&#125;<br><span class="hljs-selector-class">.son</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">50%</span> - <span class="hljs-number">100px</span>);<br>&#125;<br></code></pre></div></td></tr></table></figure>
+
+<h3 id="伪元素-inline-block-vertical-align"><a href="#伪元素-inline-block-vertical-align" class="headerlink" title="伪元素 + inline-block +  vertical-align"></a>伪元素 + inline-block +  vertical-align</h3><p>利用行内块元素 <code>vertical-align: middle;</code> 垂直中心对齐原理，伪元素宽度设为 0，实现视觉上只有一个元素。伪元素也可以用一个空盒子替代，与为了清除浮动创造一个空盒子的思想类似。</p>
+<figure class="highlight css"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-class">.parent</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">200px</span> auto;<br>  <span class="hljs-attribute">text-align</span>: center;<br>&#125;<br><span class="hljs-selector-class">.son</span> &#123;<br>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;<br>  <span class="hljs-attribute">vertical-align</span>: middle;<br>  <span class="hljs-attribute">display</span>: inline-block;<br>&#125;<br><span class="hljs-selector-class">.parent</span><span class="hljs-selector-pseudo">::after</span> &#123;<br>  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">0px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;<br>  <span class="hljs-attribute">vertical-align</span>: middle;<br>  <span class="hljs-attribute">display</span>: inline-block;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>暂时先这6种方法，以后想到了再补充 ~ ~</p>
+</blockquote>
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/CSS/">CSS</a>
+                    
+                  </div>
+                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/css/">css</a>
+                      <a class="hover-with-bg" href="/tags/CSS/">CSS</a>
                     
                   </div>
                 
